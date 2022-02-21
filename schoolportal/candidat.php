@@ -6,7 +6,7 @@
     require_once "php/connect.php";
     $sql = "SELECT `fio`, `about`, `img` FROM `events` WHERE `id`='$id'";
     $candidate = $mysql->query($sql)->fetch_assoc();
-   
+   <br>
     ?>
     <main>
         <div class="container">
