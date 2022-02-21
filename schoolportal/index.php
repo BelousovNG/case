@@ -20,6 +20,7 @@
                 <img src="img/504b620cff6f4e0c9f556b6dba35a8d4.jpg" alt="">
                 <p>можно что-нибудь написать тут</p>
             </div>
+                <br>
             <div class="new">
                 <h3>что-то интересное</h3>
                 <div class="fakeimg"></div><br>
