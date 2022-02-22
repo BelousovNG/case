@@ -11,6 +11,8 @@ $query = mysqli_query($mysql, "SELECT * FROM `teachers` WHERE id_teacher='$page'
 ?>
 <!doctype html>
 <br>
+
+<br>
 <html>
 <head>
   <meta charset="UTF-8">
