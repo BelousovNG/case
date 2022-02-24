@@ -18,6 +18,24 @@ if($mysql == false){
 	echo mysqli_connect_errno();
 	exit();
 }
+<?php
+    $mysql = new mysqli('localhost', 'root', '', 'portal');
+    $search = $_GET['searchinput'];
+    $sql = "SELECT * FROM candidates WHERE fio LIKE '%$search%'";
+    $authors = $mysql->query($sql);
+    while ($author = $authors->fetch_assoc()) :
+    ?>
+  <main class="sd">
+        <div class="container">
+            <div class="searchres">
+                <div class="resultitem">
+                    <img src="<?=$author['img']; ?>" alt="">
+                    <div class="content">
+                        <h1><?= $author['fio']; ?></h1>
+                    </div>
+                </div>
+                <?php endwhile;
+                ?>
 $query = mysqli_query($mysql, "SELECT * FROM `teachers`");
 if(mysqli_num_rows($query) == 0){
 	echo ".";
