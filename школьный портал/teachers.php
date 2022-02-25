@@ -12,7 +12,7 @@ margin-left: 3%;
 <div class="container mt-5" align="center">
 <div class="d-flex flex-wrap">
 <?php
-require_once("php/connect.php");
+require_once("connect.php");
 if($mysql == false){
 	echo "!";
 	echo mysqli_connect_errno();
