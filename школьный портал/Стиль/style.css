@@ -184,3 +184,22 @@ header{
         
     }
 }
+.sign:hover,.reg:hover{
+    background-color: rgb(46, 27, 86);
+}
+.registr{
+    font-size: 20px;
+    color: blue;
+
+}
+.sign{
+    font-size: 25px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(65, 70, 145);
+    color: #fff;
+    margin-right: 100px;
+}
